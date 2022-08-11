@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/fourtris/Documents/GitHub/anna-doneva-S03-1/homework_11'
+ 
+mkdir -p output
+gcc -Wall -Wextra -g -Iinclude -c src/help_functions.c  -o src/help_functions.o
+gcc -Wall -Wextra -g -Iinclude -c src/homework_11.c  -o src/homework_11.o
+gcc -Wall -Wextra -g -Iinclude -c src/main.c  -o src/main.o
+gcc -Wall -Wextra -g -Iinclude -c src/structures.c  -o src/structures.o
+gcc -Wall -Wextra -g -Iinclude -o output/main src/help_functions.o src/homework_11.o src/main.o src/structures.o  -Llib
+echo Executing 'all' complete!
+make: Leaving directory '/home/fourtris/Documents/GitHub/anna-doneva-S03-1/homework_11'
+ 
